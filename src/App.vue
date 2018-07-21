@@ -1,17 +1,24 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Tableau :url="url" :options="options"></Tableau>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Tableau from './components/Tableau.vue'
+// import Tableau from 'vue-tableau'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      scriptUrl: 'https://public.tableau.com/javascripts/api/tableau-2.min.js',
+      url: 'http://public.tableau.com/views/RegionalSampleWorkbook/Storms',
+      options: {
+        hideTabs: true
+      }
+    }
   }
 }
 </script>
