@@ -1,23 +1,47 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <Tableau :url="url" :options="options"></Tableau>
+    <button @click="testFilters">Change Filters</button>
+    <button @click="testSize">Change Size</button>
+    <button @click="testExport">Export PDF</button>
+    <button @click="testMethods">Test Methods</button>
+    <Tableau :url="url" :height="height" :width="width" :filters="filters" ref="tableau"></Tableau>
   </div>
 </template>
 
 <script>
-// import Tableau from './components/Tableau.vue'
+import Tableau from './components/Tableau.vue'
 // import Tableau from 'vue-tableau'
 
 export default {
   name: 'app',
+  components: {
+    Tableau
+  },
+  methods: {
+    testSize () {
+      this.height = 500,
+      this.width = 500
+    },
+    testFilters () {
+      this.filters = {}
+    },
+    testExport () {
+      this.$refs.tableau.viz.showExportPDFDialog()
+    },
+    testMethods () {
+      console.log(this.$refs['tableau'].workBook.getName())
+    }
+  },
   data () {
     return {
-      scriptUrl: 'https://public.tableau.com/javascripts/api/tableau-2.min.js',
       url: 'http://public.tableau.com/views/RegionalSampleWorkbook/Storms',
-      options: {
-        hideTabs: true
-      }
+      filters: {
+        'Storm Name': ['CELIA', 'BLAS', 'AGATHA'],
+        'Basin': 'East Pacific'
+      },
+      height: 1000,
+      width: 1000
     }
   }
 }

@@ -1,21 +1,61 @@
 # vue-tableau
+Vue.js component for integrating the [Tableau API](https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_ref.htm).
 
-## Project setup
+## Installation
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+yarn add vue-tableau
 ```
 
-### Compiles and minifies for production
+## Basic Usage
+### index.html
+Within the head of your entry html page (index.html) add the Tableau Javascript API file/
+``` html
+<script src="https://YOUR-SERVER/javascripts/api/tableau-2.min.js"></script>
 ```
-yarn run build
+or just use the public one:
+``` html
+<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 ```
 
-### Lints and fixes files
+### main.js
+Import vue-tableau within your javascript entry point.
+``` javascript
+import 'vue-tableau'
 ```
-yarn run lint
+Now you are free to use the component wherever.
+
+The following is a simple example:
+``` html
+<Tableau 
+    :url="url" 
+    :height="1000" 
+    :width="1000" 
+    :filters="{
+        Storm Name': ['CELIA', 'BLAS', 'AGATHA'],
+        'Basin': 'East Pacific'
+    }" 
+    ref="tableau">
+</Tableau>
 ```
+
+### Documentation
+The following props can be passed in and are automatically handled by the Tableau component:
+- url
+- height
+- width
+- filters
+- options (can specify constructor options explicity as documented [here](https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_ref.htm#ref_head_9)
+
+The following classes along with all of their methods are accessible through vue refs:
+
+- viz
+- workBook
+- workSheet
+
+Example:
+``` javascript
+this.$refs['tableau'].workBook.getName() 
+```
+
+Please refer to the [Tableau API Documentation](https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_ref.htm) for more details regarding all the methods available.
+
