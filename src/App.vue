@@ -4,7 +4,6 @@
     <button @click="testFilters">Change Filters</button>
     <button @click="testSize">Change Size</button>
     <button @click="testExport">Export PDF</button>
-    <button @click="testMethods">Test Methods</button>
     <Tableau :url="url" :height="height" :width="width" :filters="filters" ref="tableau"></Tableau>
   </div>
 </template>
@@ -28,9 +27,6 @@ export default {
     },
     testExport () {
       this.$refs.tableau.viz.showExportPDFDialog()
-    },
-    testMethods () {
-      console.log(this.$refs['tableau'].workBook.getName())
     }
   },
   data () {

@@ -6641,8 +6641,8 @@ vue-style-loader@^4.1.0:
     loader-utils "^1.0.2"
 
 vue-tableau@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/vue-tableau/-/vue-tableau-0.1.1.tgz#cc62013279817fe6a38a4b61fdc55fc309ac3ab3"
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vue-tableau/-/vue-tableau-0.1.2.tgz#45fac40b44a32c692fc0180be3946a3d03fbc88e"
   dependencies:
     vue "^2.5.16"
     vue-tableau "^0.1.0"

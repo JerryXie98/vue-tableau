@@ -1,5 +1,6 @@
 <template>
     <div id="tableau">
+        <button @click="initViz">nice</button>
     </div>
 </template>
 
@@ -11,7 +12,10 @@ export default {
         options: {},
         width: '',
         height: '',
-        filters: {}
+        filters: {},
+        apiUrl: {
+            default: 'https://public.tableau.com/javascripts/api/tableau-2.2.2.min.js'
+        }
     },
     data () {
         return {
@@ -68,8 +72,15 @@ export default {
             this.viz = new window.tableau.Viz(containerDiv, this.url, options)
         }
     },
-    created () {
-        this.initViz()
+    mounted () {
+        let recaptchaScript = document.createElement('script')
+        // recaptchaScript.async = true
+        recaptchaScript.setAttribute('src', this.apiUrl)
+        this.tableauScript = document.head.appendChild(recaptchaScript)
+
+        window.addEventListener('load', () => {
+            this.initViz()
+        })
     },
     beforeDestroy () {
         this.viz.dispose()

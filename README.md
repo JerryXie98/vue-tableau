@@ -7,15 +7,6 @@ yarn add vue-tableau
 ```
 
 ## Basic Usage
-### index.html
-Within the head of your entry html page (index.html) add the Tableau Javascript API file/
-``` html
-<script src="https://YOUR-SERVER/javascripts/api/tableau-2.min.js"></script>
-```
-or just use the public one:
-``` html
-<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-```
 
 ### main.js
 Import vue-tableau within your javascript entry point.
