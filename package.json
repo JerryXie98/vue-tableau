@@ -7,6 +7,11 @@
     "build-bundle": "vue-cli-service build --target lib --name vue-tableau ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JerryXie98/vue-tableau.git"
+  },
+  "homepage": "https://github.com/JerryXie98/vue-tableau#readme",
   "main": "./dist/vue-tableau.common.js",
   "dependencies": {
     "vue": "^2.5.16",
@@ -48,5 +53,7 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "author": "Jerry Xie",
+  "license": "MIT"
 }

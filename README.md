@@ -32,7 +32,7 @@ The following is a simple example:
 ### Documentation
 The following props can be passed in and are automatically handled by the Tableau component:
 - url
-- height
+- height 
 - width
 - filters
 - options (can specify constructor options explicity as documented [here](https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_ref.htm#ref_head_9)

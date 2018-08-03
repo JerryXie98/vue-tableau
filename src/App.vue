@@ -9,14 +9,8 @@
 </template>
 
 <script>
-import Tableau from './components/Tableau.vue'
-// import Tableau from 'vue-tableau'
-
 export default {
   name: 'app',
-  components: {
-    Tableau
-  },
   methods: {
     testSize () {
       this.height = 500,
