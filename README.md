@@ -29,6 +29,8 @@ The following is a simple example:
 </Tableau>
 ```
 
+![alt text](src/assets/TableauExample.png)
+
 ### Documentation
 The following props can be passed in and are automatically handled by the Tableau component:
 - url

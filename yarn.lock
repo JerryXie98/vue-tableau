@@ -6647,6 +6647,13 @@ vue-tableau@^0.1.0:
     vue "^2.5.16"
     vue-tableau "^0.1.0"
 
+vue-tableau@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vue-tableau/-/vue-tableau-0.1.4.tgz#11eb70b0232256e85baf51aaa0d8d7cad62832e4"
+  dependencies:
+    vue "^2.5.16"
+    vue-tableau "^0.1.0"
+
 vue-template-compiler@^2.5.16:
   version "2.5.16"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.5.16.tgz#93b48570e56c720cdf3f051cc15287c26fbd04cb"
