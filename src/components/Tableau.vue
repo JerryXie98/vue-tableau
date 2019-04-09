@@ -1,6 +1,5 @@
 <template>
     <div id="tableau">
-        <button @click="initViz">nice</button>
     </div>
 </template>
 
