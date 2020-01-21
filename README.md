@@ -22,7 +22,7 @@ The following is a simple example:
     :height="1000" 
     :width="1000" 
     :filters="{
-        Storm Name': ['CELIA', 'BLAS', 'AGATHA'],
+        'Storm Name': ['CELIA', 'BLAS', 'AGATHA'],
         'Basin': 'East Pacific'
     }" 
     ref="tableau">
