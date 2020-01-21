@@ -4095,8 +4095,8 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
 
 lodash.defaultsdeep@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
 
 lodash.mapvalues@^4.6.0:
   version "4.6.0"
@@ -6639,20 +6639,6 @@ vue-style-loader@^4.1.0:
   dependencies:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
-
-vue-tableau@^0.1.0:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/vue-tableau/-/vue-tableau-0.1.3.tgz#45c3dc47f8647c22aae1cd58c14632cbb55b39b5"
-  dependencies:
-    vue "^2.5.16"
-    vue-tableau "^0.1.0"
-
-vue-tableau@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/vue-tableau/-/vue-tableau-0.1.4.tgz#11eb70b0232256e85baf51aaa0d8d7cad62832e4"
-  dependencies:
-    vue "^2.5.16"
-    vue-tableau "^0.1.0"
 
 vue-template-compiler@^2.5.16:
   version "2.5.16"
